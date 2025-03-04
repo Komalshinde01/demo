@@ -6,6 +6,11 @@ app.get('/',(req,res) =>{
 }
 );
 
+app.get('/index',(req,res) =>{
+    res.send("welcome to the index page");
+}
+);
+
 const port = 5000;
 app.listen(port,()=>{
     console.log(`server run ${port}`);
